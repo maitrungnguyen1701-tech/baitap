@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hồ Sơ Cá Nhân | Mai Trung Nguyên</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(52, 152, 219, 0.9)), url('https://files.catbox.moe/kka36r.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 4rem 1rem;
+            border-radius: 0 0 15px 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            margin-bottom: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+       .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            object-fit: cover;
+            margin-bottom: 1rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }         
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        h2 {
+            color: #2c3e50;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+            margin-top: 2rem;
+        }
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .info-table th {
+            background-color: #3498db;
+            color: white;
+            text-align: left;
+            padding: 15px;
+            font-size: 1.1rem;
+        }
+        
+        .info-table td {
+            padding: 15px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .info-table tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        
+        .info-table tr:hover {
+            background-color: #f1f8ff;
+            transition: background-color 0.3s;
+        }
+        
+        .info-table tr:last-child td {
+            border-bottom: none;
+        }
+        .card-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .card-icon {
+            background-color: #3498db;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-size: 1.2rem;
+        }
+        .strength-list, .hobby-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .strength-list li, .hobby-list li {
+            padding: 8px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+       .strength-list li:before {
+            content: "✓";
+            color: #27ae60;
+            font-weight: bold;
+            font-size: 1.2rem;
+            position: absolute;
+            left: 0;
+        }
+        audio {
+            width: 100%;
+            max-width: 400px;
+            margin-top: 10px;
+            border-radius: 20px;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-weight: 500;
+        }
+        a:hover {
+            color: #2980b9;
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 15px;
+            }
+            .info-table {
+                display: block;
+                overflow-x: auto;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            .profile-img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<header>
+    <img src="https://files.catbox.moe/c3j8rg.jpg" alt="Ảnh chân dung" class="profile-img">
+    <h1>Mai Trung Nguyên</h1>
+    <p>Học sinh lớp 12 - Trường THPT Nguyễn Trân</p>
+</header>
+<div class="container">
+    <h2><strong>Giới Thiệu Bản Thân</strong></h2>
+    <table class="info-table">
+        <thead>
+            <tr>
+                <th>Thông tin</th>
+                <th>Chi tiết</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Họ và tên</strong></td>
+                <td>Mai Trung Nguyên</td>
+            </tr>
+            <tr>
+                <td><strong>Ngày sinh</strong></td>
+                <td>17/10/2008</td>
+            </tr>
+            <tr>
+                <td><strong>Địa chỉ</strong></td>
+                <td>Khu phố Vĩnh Tuy, phường Sa Huỳnh, tỉnh Quảng Ngãi</td>
+            </tr>
+            <tr>
+                <td><strong>Facebook cá nhân</strong></td>
+                <td><a href="https://www.facebook.com/trung.nguyen.395645" target="_blank">Trung Nguyên</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <h2><strong>Sở Trường</strong></h2>
+    <table class="info-table">
+        <thead>
+            <tr>
+                <th>Lĩnh vực</th>
+                <th>Mô tả</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Nấu ăn</strong></td>
+                <td>Có khả năng nấu các món ăn ngon và hấp dẫn</td>
+            </tr>
+            <tr>
+                <td><strong>Sáng tạo</strong></td>
+                <td>Khả năng sáng tạo trong nhiều lĩnh vực</td>
+            </tr>
+            <tr>
+                <td><strong>Tự lập</strong></td>
+                <td>Có tính tự lập cao, không phụ thuộc vào người khác</td>
+            </tr>
+            <tr>
+                <td><strong>Linh hoạt</strong></td>
+                <td>Khả năng thích ứng và xử lý tình huống linh hoạt</td>
+            </tr>
+            <tr>
+                <td><strong>Kiểm soát cảm xúc</strong></td>
+                <td>Khả năng kiềm chế và quản lý cảm xúc tốt</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2><strong>Điểm yếu</strong></h2>
+    <table class="info-table">
+        <tbody>
+            <tr>
+                <td><strong>Rụt rè </strong></td>
+                <td>Khả năng giao tiếp yếu nơi đông người </td>
+            </tr>
+         </tbody>
+    </table>
+    <h2><strong>Sở Thích Cá Nhân</strong></h2>
+    <div>
+	<table class="info-table">
+	<tr>
+            <td>Thích thiên nhiên</td>
+            <td>Xem phim</td>
+            <td>Nghe nhạc</td>
+            <td>Chơi thể thao</td>
+            <td>Xem chương trình thực tế</td>
+	</tr>
+        <p><strong>Bài hát yêu thích 🎧🎶:</strong> <em>Mặt Mộc</em></p>
+        <audio controls>
+            <source src="https://files.catbox.moe/7at7x8.mp3" type="audio/mp3">
+           </audio>
+	
+	</table>
+    </div>
+  </div>
+</body>
+</html>
